@@ -33,7 +33,7 @@ export class DensityGraphComponent implements OnInit {
     const step = (b - a) / (N - 1);
     const t = new Array(N), x = new Array(N), y = new Array(N);
 
-    for(var i = 0; i < N; i++){
+    for(let i = 0; i < N; i++){
       t[i] = a + step * i;
       x[i] = (Math.pow(t[i], 3)) + (0.3 * normal() );
       y[i] = (Math.pow(t[i], 6)) + (0.3 * normal() );
